@@ -153,6 +153,31 @@ export function MenuView({ categories, initialTable, restaurantName }: Props) {
         </div>
       </main>
 
+      <footer className="mx-auto mt-12 max-w-4xl border-t border-[#f1e3b5] px-4 py-6 sm:px-8">
+        <p className="text-sm font-bold text-[#231a07]">{t("findUs")}</p>
+        <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium">
+          <a
+            href="https://2gis.kz/almaty/geo/70000001119041993?inv_by=b9aede6f4cd645bb9d0ac2600c66ddce&inv_ts=1795083706"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t("addressOnMap")}
+            className="text-[#8a6500] underline decoration-[#e0a800]/50 underline-offset-4 hover:text-[#5f4700]"
+          >
+            2GIS
+          </a>
+          <a
+            href="https://www.instagram.com/damtat_damhanasy?cnvx=MWVuNWpzMXRoN3Eydg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t("instagramProfile")}
+            className="text-[#8a6500] underline decoration-[#e0a800]/50 underline-offset-4 hover:text-[#5f4700]"
+          >
+            Instagram
+          </a>
+        </div>
+        <p className="mt-5 text-xs text-[#80714f]">{restaurantName}</p>
+      </footer>
+
       <CartBar onOpen={() => setCartOpen(true)} />
       <CartSheet open={cartOpen} onClose={() => setCartOpen(false)} initialTable={initialTable} />
     </div>

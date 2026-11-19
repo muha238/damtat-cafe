@@ -7,6 +7,9 @@ export type Language = "kk" | "ru";
 const translations = {
   kk: {
     tagline: "Дәмі тамаша",
+    findUs: "Бізді табыңыз",
+    addressOnMap: "2GIS-тағы мекенжайымыз",
+    instagramProfile: "DAMTAT Instagram парақшасы",
     welcome: "Жақсы дәм — жақсы көңіл күйден басталады",
     welcomeDescription: "Өзіңізге ұнағанын таңдаңыз, қалғанын біз дайындаймыз.",
     menu: "Мәзір",
@@ -60,6 +63,9 @@ const translations = {
   },
   ru: {
     tagline: "Вкус, который запомнится",
+    findUs: "Найдите нас",
+    addressOnMap: "Наш адрес в 2GIS",
+    instagramProfile: "Instagram DAMTAT",
     welcome: "Хорошее настроение начинается с хорошей еды",
     welcomeDescription: "Выбирайте любимое — остальное мы приготовим.",
     menu: "Меню",
