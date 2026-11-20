@@ -1,5 +1,6 @@
 import "server-only";
 import { formatPrice } from "./format";
+import { siteConfig } from "@/config/site";
 import type { DeliveryMode } from "@/types";
 
 type WaOrder = {
@@ -15,7 +16,7 @@ type WaOrder = {
 
 /** WHATSAPP_NUMBER → тек цифрлар (wa.me форматы: 77011234567) */
 export function whatsappNumber(): string | null {
-  const digits = (process.env.WHATSAPP_NUMBER ?? "").replace(/\D/g, "");
+  const digits = (siteConfig.whatsappNumber || process.env.WHATSAPP_NUMBER || "").replace(/\D/g, "");
   return digits.length >= 10 ? digits : null;
 }
 

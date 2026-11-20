@@ -6,6 +6,12 @@ export type Language = "kk" | "ru";
 
 const translations = {
   kk: {
+    viewMenu: "Мәзірді көру",
+    location: "Көлікпен жеңіл жетесіз",
+    workingHours: "Жұмыс уақыты",
+    phone: "Телефон",
+    whatsapp: "WhatsApp",
+    address: "Мекенжай",
     tagline: "Дәмі тамаша",
     findUs: "Бізді табыңыз",
     addressOnMap: "2GIS-тағы мекенжайымыз",
@@ -51,8 +57,6 @@ const translations = {
     pickup: "Өзім аламын",
     yourName: "Атыңыз",
     namePlaceholder: "Мысалы: Айгерім",
-    phone: "Телефон",
-    address: "Мекенжай",
     addressPlaceholder: "Көше, үй, пәтер",
     enterPhone: "Телефон нөмірін жазыңыз",
     enterAddress: "Жеткізу мекенжайын жазыңыз",
@@ -62,6 +66,12 @@ const translations = {
     dineInNote: "Тапсырыс бірден асханаға түседі",
   },
   ru: {
+    viewMenu: "Смотреть меню",
+    location: "Удобный подъезд",
+    workingHours: "Режим работы",
+    phone: "Телефон",
+    whatsapp: "WhatsApp",
+    address: "Адрес",
     tagline: "Вкус, который запомнится",
     findUs: "Найдите нас",
     addressOnMap: "Наш адрес в 2GIS",
@@ -107,8 +117,6 @@ const translations = {
     pickup: "Самовывоз",
     yourName: "Ваше имя",
     namePlaceholder: "Например: Айгерим",
-    phone: "Телефон",
-    address: "Адрес",
     addressPlaceholder: "Улица, дом, квартира",
     enterPhone: "Укажите номер телефона",
     enterAddress: "Укажите адрес доставки",
